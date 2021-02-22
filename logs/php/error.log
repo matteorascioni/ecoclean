@@ -1,0 +1,14 @@
+[22-Feb-2021 11:03:51 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 134217736 bytes) in /Users/matteorascioni/Local Sites/ecoclean/app/public/wp-includes/class-wp-text-diff-renderer-table.php on line 419
+[22-Feb-2021 11:03:51 UTC] PHP Stack trace:
+[22-Feb-2021 11:03:51 UTC] PHP   1. {main}() /Users/matteorascioni/Local Sites/ecoclean/app/public/wp-admin/admin-ajax.php:0
+[22-Feb-2021 11:03:51 UTC] PHP   2. do_action() /Users/matteorascioni/Local Sites/ecoclean/app/public/wp-admin/admin-ajax.php:184
+[22-Feb-2021 11:03:51 UTC] PHP   3. WP_Hook->do_action() /Users/matteorascioni/Local Sites/ecoclean/app/public/wp-includes/plugin.php:484
+[22-Feb-2021 11:03:51 UTC] PHP   4. WP_Hook->apply_filters() /Users/matteorascioni/Local Sites/ecoclean/app/public/wp-includes/class-wp-hook.php:311
+[22-Feb-2021 11:03:51 UTC] PHP   5. wp_ajax_get_revision_diffs() /Users/matteorascioni/Local Sites/ecoclean/app/public/wp-includes/class-wp-hook.php:287
+[22-Feb-2021 11:03:51 UTC] PHP   6. wp_get_revision_ui_diff() /Users/matteorascioni/Local Sites/ecoclean/app/public/wp-admin/includes/ajax-actions.php:3461
+[22-Feb-2021 11:03:51 UTC] PHP   7. wp_text_diff() /Users/matteorascioni/Local Sites/ecoclean/app/public/wp-admin/includes/revision.php:110
+[22-Feb-2021 11:03:51 UTC] PHP   8. WP_Text_Diff_Renderer_Table->render() /Users/matteorascioni/Local Sites/ecoclean/app/public/wp-includes/pluggable.php:2802
+[22-Feb-2021 11:03:51 UTC] PHP   9. WP_Text_Diff_Renderer_Table->_block() /Users/matteorascioni/Local Sites/ecoclean/app/public/wp-includes/Text/Diff/Renderer.php:143
+[22-Feb-2021 11:03:51 UTC] PHP  10. WP_Text_Diff_Renderer_Table->_changed() /Users/matteorascioni/Local Sites/ecoclean/app/public/wp-includes/Text/Diff/Renderer.php:170
+[22-Feb-2021 11:03:51 UTC] PHP  11. WP_Text_Diff_Renderer_Table->interleave_changed_lines() /Users/matteorascioni/Local Sites/ecoclean/app/public/wp-includes/class-wp-text-diff-renderer-table.php:261
+[22-Feb-2021 11:03:51 UTC] PHP  12. array_splice() /Users/matteorascioni/Local Sites/ecoclean/app/public/wp-includes/class-wp-text-diff-renderer-table.php:419
